@@ -1,0 +1,3 @@
+[core]
+; If it is not working execute from a terminal with admin privileges $ git config --system core.longpaths true
+longpaths = true
