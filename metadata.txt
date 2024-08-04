@@ -1,0 +1,29 @@
+[general]
+; Mandatory metadata
+name=My Plugin
+qgisMinimumVersion=3.28
+description=QGIS Plugin Template
+version=1.0.0
+author=Example Name
+email=example@mail.com
+about=
+tracker=
+repository=
+; End of mandatory metadata
+
+; Recommended (uncomment the following lines) :
+
+; hasProcessingProvider=
+; changelog=
+; tags=
+
+; homepage=
+; icon=
+; category=
+; experimental=
+
+; deprecated=
+; plugin_dependencies=
+; server=
+
+; For more check: https://docs.qgis.org/latest/en/docs/pyqgis_developer_cookbook/plugins/plugins.html#metadata-txt
