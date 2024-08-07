@@ -9,6 +9,7 @@ services:
     volumes:
       - ${PLUGIN_PATH}:/tests_directory
       - ${QGIS_PROFILE_PATH}/:/root/.local/share/QGIS/QGIS3/profiles/default
+      - ${QGIS_DATA_PATH}:/tmp
     stdin_open: true
     tty: true
     depends_on:
