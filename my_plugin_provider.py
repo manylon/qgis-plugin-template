@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
+import os
+
 from qgis.core import QgsProcessingProvider
+
+from .components import create_buffer_from_points
+
+pluginPath = os.path.split(os.path.dirname(__file__))[0]
 
 
 class MyPluginProvider(QgsProcessingProvider):
@@ -19,6 +25,7 @@ class MyPluginProvider(QgsProcessingProvider):
         """
         Loads all algorithms belonging to this provider.
         """
+        self.addAlgorithm(create_buffer_from_points.CreateBufferFromPoints())
 
     def id(self):
         """
